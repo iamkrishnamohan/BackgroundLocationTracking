@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             BackgroundLocationTrackingTheme {
                 Column(
-                    modifier = Modifier.fillMaxSize()
+                    modifier = Modifier.fillMaxSize().wrapContentSize(Alignment.Center)
                 ) {
                     Button(onClick = {
                         Intent(applicationContext, LocationService::class.java).apply {
